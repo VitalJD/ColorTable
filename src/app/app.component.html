@@ -1,0 +1,75 @@
+<div>
+  <h2>Таблица с ячейками окрашеными в разные цвета</h2>
+</div>
+<br>
+<div>
+  <table [class]="colorClass"> 
+    <tr>
+      <td [style.color]="colors.red">#FF0000</td>
+    </tr>
+    <tr>
+      <td style="font-weight:bold" [style.color]="colors.orange" [style]="'background-color: ' + colors.red" >#FF7F00</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.yellow">#FFFF00</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.green">#00FF00</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.blue">#00FFFF</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.darkblue">#0000FF</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.purple">#8B00FF</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.indianRed">#CD5C5C</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.limeGreen">#32CD3</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.lightSalmon">#FFA07A</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.springGreen">#00FF7F</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.paleVioletRed">#DB7093</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.olive">#808000</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.coral">#FF7F50</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.teal">#008080</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.darkKhaki">#BDB76B</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.steelBlue">#4682B4</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.blueViolet">#8A2BE2</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.rosyBrown">#BC8F8F</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.dimGrey">#696969</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.sienna">#A0522D</td>
+    </tr>
+    <tr>
+      <td [style.color]="colors.navy">#000080</td>
+    </tr>
+  </table>
+  <button (click)="hideColor()">Нажми меня!</button>
+</div>
